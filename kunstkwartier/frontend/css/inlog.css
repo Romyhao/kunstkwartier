@@ -3,6 +3,8 @@
     background-size: auto;
 }
 
-.logo{
-    size: 50rem;
+#logo{
+    position: absolute;
+    
 }
+
