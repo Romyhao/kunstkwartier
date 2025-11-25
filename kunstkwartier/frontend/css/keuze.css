@@ -1,68 +1,156 @@
-/* menu (niet open menu) */
-.menu {
-    background-color: rgb(34, 37, 49);
-    height: 100vh;
+/* Reset alles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body en achtergrond */
+html, body {
     width: 100%;
-    max-width: 450px;
+    height: 100%;
+    overflow-x: hidden; /* voorkomt horizontale witruimte */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-image: url("../images/Welcome.png");
+    background-size: cover;
+    background-position: top left; /* plakt linksboven */
+    background-repeat: no-repeat;
+}
+
+/* Navbar */
+nav {
+    width: 100%;
+    height: 70px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
     position: fixed;
     top: 0;
-    right: -450px;
+    left: 0;
+    z-index: 1000;
+    padding: 0; /* verwijder padding die de navbar inhoud naar rechts duwt */
+}
+
+/* Logo + hamburger container */
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 5rem;   /* kleiner gap zodat het niet teveel naar rechts duwt */
+    margin-left: 0;
+}
+
+/* Hamburger menu */
+.ham-menu {
+    height: 25px;
+    width: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+    z-index: 1001;
+    margin-left: 1rem;
+}
+
+.ham-menu span {
+    height: 3px;
+    width: 100%;
+    background-color: #000;
+    border-radius: 25px;
+    transition: 0.3s ease;
+}
+
+.ham-menu.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+.ham-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+.ham-menu.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Logo */
+.logo-container .logo {
+    height: 50px;
+    width: auto;
+    display: block;
+}
+
+/* Off-screen menu */
+.off-screen-menu {
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    width: 500px;
+    position: fixed;
+    top: 0;
+    left: -500px; /* start buiten scherm */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 3rem;
-    transition: none.3s ease;
+    font-size: 1.5rem;
+    transition: 0.3s ease;
+    z-index: 900;
 }
 
-.menu {
-    right: 0;
+.off-screen-menu.menu {
+    left: 0;
 }
 
-nav {
-    padding: 1rem;
+.off-screen-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.off-screen-menu li {
+    margin: 1rem 0;
+    cursor: pointer;
+}
+
+
+
+/* Achtergrond tekst */
+.achtergrond-afbeelding h1 {
+    color: #000;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 35vh;
+}
+
+/* knopjes keuze-buttons */
+.button-container {
     display: flex;
-    background-color: rgb(34, 37, 49);
+    flex-direction: column;      
+    justify-content: center;     
+    align-items: center;         
+    gap: 1.5rem;                
+    height: 30vh;               
 }
 
-.ham-menu {
-    height: 50px;
-    width: 50px;
-    margin-left: auto;
-    position: relative;
+/* button styling */
+.button-container a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
+    font-size: 1rem;             
+    padding: 15px 0;             
+    width: 400px;                
+    text-align: center;           
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
 }
 
-.ham-menu span {
-    height: 5px;
-    width: 100%;
-    background-color: #6F86FF;
-    border-radius: 25px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: .3s ease;
+/* Hover-effect */
+.button-container a:hover {
+    background-color: #333;
+    transform: scale(1.05);
 }
 
-.ham-menu span:nth-child(1) {
-    top: 25%;
-}
 
-.ham-menu span:nth-child(3) {
-    top: 75%;
-}
-
-.ham-menu.active span:nth-child(1) {
-    top: 50%;
-    transform: translate(-50%, -50%) rotate(45deg);
-}
-
-.ham-menu.active span:nth-child(2) {
-    opacity: 0;
-}
-
-.ham-menu.active span:nth-child(3) {
-    top: 50%;
-    transform: translate(-50%, 50%) rotate(-45deg);
-}

@@ -1,47 +1,52 @@
 <!doctype html>
 <html lang="nl">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Kunstkwartiertje</title>
-        <link rel="stylesheet" href="keuze.css">
-        <link rel
-    </head>
-    <body>
- 
-    <!-- Icon voor hamburger menu begin van code -->
- 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
- 
-        <!-- Navigatie -->
-        "<div class="menu">
-            <li><a href="#">Home</li>
-            <li><a href="#">Algemeen</li>
-            <li><a href="#">Mijn reserveringen</li>
-            <li><a href="#">Mijn werkjes</li>
-            <li><a href="#">Activiteiten en plannen</li>
-            <li><a href="#">Plaats een nieuw werk</li>
-            <li><a href="#">Contact</li>
-        </div>
- 
- 
-        <nav>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kunstkwartiertje</title>
+    <link rel="stylesheet" href="css/keuze.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="nav-left">
+            <!-- Hamburger menu -->
             <div class="ham-menu">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
-        </nav>
- 
- 
-        <!-- achtergond afbeelding -->
-        <div class="achtergrond-afbeelding">
-            <h1>Welkom ga verder als</h1>
-            <image src=""/kunstkwartier/frontend/foto/Welcome.png">
-        </div> 
- 
- 
-    <!-- Link naar JavaScript file -->
+            <!-- Logo naast hamburger -->
+            <div class="logo-container">
+                <img src="images/Logo.jpg" alt="Kunstkwartiertje Logo" class="logo">
+            </div>
+        </div>
+    </nav>
+
+    <!-- Off-screen Menu -->
+    <div class="off-screen-menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index2.html">Algemeen</a></li>
+            <li><a href="reserveringen.html">Mijn reserveringen</a></li>
+            <li><a href="mijn_werkjes.html">Mijn werkjes</a></li>
+            <li><a href="activiteiten.html">Activiteiten en plannen</a></li>
+            <li><a href="nieuw_werk.html">Plaats een nieuw werk</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Achtergrond afbeelding en tekst -->
+    <div class="achtergrond-afbeelding">
+        <h1>Welkom, ga verder als</h1>
+    </div> 
+
+    <!-- Keuze knoppen -->
+    <div class="button-container">
+    <a href="Starters.html" class="verkoop-button">Verkoper</a>
+    <a href="index.html" class="koper-button">Koper</a>
+    </div>
+
     <script src="app.js"></script>
-    </body>
+</body>
 </html>
