@@ -13,12 +13,6 @@ html, body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body {
-    background-image: url("../images/Welcome.png");
-    background-size: cover;
-    background-position: top left; /* plakt linksboven */
-    background-repeat: no-repeat;
-}
 
 /* Navbar */
 nav {
@@ -114,41 +108,75 @@ nav {
     cursor: pointer;
 }
 
-/* Achtergrond tekst */
-.achtergrond-afbeelding h1 {
-    color: #000;
-    font-size: 2rem;
-    text-align: center;
-    margin-top: 20vh;
+
+
+/* Deze pagina styling begint hier */
+.Start-algemeen{
+    margin-top: 100px;
+    text-align: left;
+    padding: 20px;
 }
 
-/* knopjes keuze-buttons */
-.button-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1.5rem;
-    height: 30vh;
+
+/* text Start uw kunstenaarprofiel en subtext*/
+.Start-intro h1 {
+    font-weight: 600;
+    margin-bottom: 10px;
 }
 
-/* button styling */
-.button-container a {
-    display: inline-block;
-    text-decoration: none;
-    background-color: #000;
-    color: #fff;
-    font-size: 1rem;
-    padding: 15px 0;
-    width: 400px;
-    text-align: center;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: transform 0.2s, background-color 0.2s;
+/*subtext*/
+.Start-intro h4 {
+    font-weight: 480;
+    margin-bottom: 30px;
 }
 
-/* Hover-effect */
-.button-container a:hover {
-    background-color: #333;
-    transform: scale(1.05);
+
+/* Voeg foto en introductietekst toe en subtext */
+.Foto-intro h2 {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/*subtext*/
+.Foto-intro h4 {
+    font-weight: 480;
+    margin-bottom: 30px;
+}
+
+
+/* Algemeen upload vak */
+.fotoup-vak {
+    background-color: white;
+    border: 1px solid rgb(229, 229, 229);
+    max-width: 450px;
+    height: 150px;
+    border-radius: 5px;
+}
+
+/*pictogram in upload vak */
+.upload-foto img{
+    width: 50%;
+    height: 50%;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+/*grijze bg vormpje profiel foto */
+.upload-foto {
+    background-color: rgb(232, 232, 232);
+    width: 105px;
+    border-radius: 6px;
+}
+
+/* uploaden tekst in upload vak */
+.Upload-tekst h3 {
+    color: rgb(0, 0, 0);
+    padding-left: 10px;
+}
+
+/* grijze bg vormpje achter het woord Uploaden als button */
+.Upload-tekst {
+    background-color: rgb(232, 232, 232);
+    width: 105px;
+    border-radius: 6px;
 }
