@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+   
+}
+
+
+.phone-container {
+    width: 100%;
+    max-width: 430px;
+    padding: 60px 24px 40px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 100vh;
+    align-items: center;
+    background: linear-gradient(
+    75deg,
+    #ffd6e7 0%,    /* More prominent pink */
+    #ffe0c8 14%,   /* Light orange */
+    #fff4c2 28%,   /* Light yellow */
+    #d4f0d4 42%,   /* Softer green */
+    #c2e7ff 56%,   /* Light blue */
+    #d8c8ff 70%,   /* Light indigo */
+    #ffc2eb 84%,   /* Light violet */
+    #ffd6e7 100%   /* Pink again for balance */
+    );
+    background-attachment: fixed;
+}
+
+.welcome-text{
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+
+}
+  
+.logo {
+    width: 280px;
+    height: auto;
+    margin-bottom: 60px;
+    object-fit: contain;
+    align-self: center;
+    left: 50px
+}
+
+
+.start-button {
+    width: 100%;
+    padding: 14px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 8px;
+    
+}
+
+.start-button:hover {
+    background-color: #333;
+}
