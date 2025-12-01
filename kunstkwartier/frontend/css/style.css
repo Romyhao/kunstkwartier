@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Livvic', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.phone-container {
+    width: 100%;
+    max-width: 430px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(
+        180deg,
+        #ffd6e7 0%,
+        #ffe0c8 14%,
+        #fff4c2 28%,
+        #d4f0d4 42%,
+        #c2e7ff 56%,
+        #d8c8ff 70%,
+        #ffc2eb 84%,
+        #ffd6e7 100%
+    );
+    background-attachment: fixed;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 24px 40px 24px;
+}
+
+.welcome-text {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 16px;
+    color: #000;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.logo {
+    width: 280px;
+    height: auto;
+    object-fit: contain;
+}
+
+.description {
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #000;
+    margin-bottom: 32px;
+    padding: 0 16px;
+    max-width: 350px;
+}
+
+.start-button {
+    width: 550px;
+    max-width: 350px;
+    padding: 16px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Livvic', sans-serif;
+}
+
+.start-button:hover {
+    background-color: #333;
+}
+
