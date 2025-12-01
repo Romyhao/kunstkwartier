@@ -147,7 +147,7 @@ nav {
 /* Algemeen upload vak */
 .fotoup-vak {
     background-color: white;
-    border: 1px solid rgb(229, 229, 229);
+    border: 1px solid rgb(239, 239, 239);
     max-width: 450px;
     height: 150px;
     border-radius: 5px;
@@ -155,28 +155,96 @@ nav {
 
 /*pictogram in upload vak */
 .upload-foto img{
-    width: 50%;
-    height: 50%;
+    width: 70%;
+    height: 70%;
     border-radius: 5px;
-    padding-left: 10px;
+    padding-left: 15px;
+    margin-left: 4px;
+    margin-top: 15px;
+    margin-bottom: 10px;
 }
 
 /*grijze bg vormpje profiel foto */
 .upload-foto {
-    background-color: rgb(232, 232, 232);
-    width: 105px;
+    background-color: rgb(250, 250, 250);
     border-radius: 6px;
+    max-width: 80px;
+    margin-left: 10px;
+    margin-top: 12px;
+    
 }
 
 /* uploaden tekst in upload vak */
 .Upload-tekst h3 {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     padding-left: 10px;
+    padding: 5px 5px 5px 12px;
+    font-weight: 500;
 }
 
 /* grijze bg vormpje achter het woord Uploaden als button */
 .Upload-tekst {
-    background-color: rgb(232, 232, 232);
-    width: 105px;
+    background-color: rgb(0, 0, 0);
+    width: 110px;
     border-radius: 6px;
+    margin-left: 10px;
+    margin-top: 10px;
 }
+
+/* Intro tekst bij profielfoto uploaden */
+.intro-text {
+    background-color: rgb(255, 255, 255);
+    border-radius: 6px;
+    border: 1px solid rgb(239, 239, 239);
+    max-width: 450px;
+    margin-top: 12px;
+}
+
+
+/* Text van de introvakje */
+.intro-text h2 {
+    font-weight: 380;
+    font-size: 0.8rem;
+    padding: 10px;
+    color: #e2e2e2;
+}
+
+/* upload tenminste 5 - tekst title */
+.upload5 h3 {
+    font-weight: 600;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+/* Vakje voor het uploaden van 5 schilderijen */
+.upload5-vak {
+    background-color: white;
+    border: 1px solid rgb(239, 239, 239);
+    max-width: 450px;
+    height: 200px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+
+
+
+
+/* Tekst in het vakje van uploaden van 5 schilderijen */
+.upload5-vaktekst h3 {
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    margin-left: 100px;
+    margin-top: 80px;
+    font-size: 15px;
+}
+
+
+/* pictogram afbeelding in het vakje van het uploaden van de afbeeldingen */
+.afbeelding-picto img{
+    width: 15%;
+    height: 15%;
+    padding-left: 15px;
+    margin-left: 4px;
+}
+
