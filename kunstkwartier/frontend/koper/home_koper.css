@@ -1,0 +1,115 @@
+/* Reset alles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body en achtergrond */
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* voorkomt horizontale witruimte */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-image: url("../images/Welcome.png");
+    background-size: cover;
+    background-position: top left; /* plakt linksboven */
+    background-repeat: no-repeat;
+}
+
+/* Navbar */
+nav {
+    width: 100%;
+    height: 70px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 0; /* verwijder padding die de navbar inhoud naar rechts duwt */
+}
+
+/* Logo + hamburger container */
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 5rem; /* kleiner gap zodat het niet teveel naar rechts duwt */
+    margin-left: 0;
+}
+
+/* Hamburger menu */
+.ham-menu {
+    height: 25px;
+    width: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+    z-index: 1001;
+    margin-left: 1rem;
+}
+
+.ham-menu span {
+    height: 3px;
+    width: 100%;
+    background-color: #000;
+    border-radius: 25px;
+    transition: 0.3s ease;
+}
+
+.ham-menu.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.ham-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.ham-menu.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Logo */
+.logo-container .logo {
+    height: 50px;
+    width: auto;
+    display: block;
+}
+
+/* Off-screen menu */
+.off-screen-menu {
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    width: 500px;
+    position: fixed;
+    top: 0;
+    left: -500px; /* start buiten scherm */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+    transition: 0.3s ease;
+    z-index: 900;
+}
+
+.off-screen-menu.menu {
+    left: 0;
+}
+
+.off-screen-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.off-screen-menu li {
+    margin: 1rem 0;
+    cursor: pointer;
+}
