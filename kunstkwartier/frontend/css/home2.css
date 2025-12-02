@@ -113,3 +113,11 @@ nav {
 /* deze pagina styling */
 
 /* zoek balk styling */
+.zoekbalk {
+    background-color: rgb(114, 114, 114);
+    border-color: #000;
+    width: 330px;
+    height: 40px;
+    border-radius: 20px;
+    padding: 0 15px;
+}
