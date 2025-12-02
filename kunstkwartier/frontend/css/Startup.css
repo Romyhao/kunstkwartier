@@ -171,7 +171,6 @@ nav {
     max-width: 80px;
     margin-left: 10px;
     margin-top: 12px;
-    
 }
 
 /* uploaden tekst in upload vak */
@@ -201,7 +200,7 @@ nav {
 }
 
 
-/* Text van de introvakje */
+/* Text van de introvakje ( schrijf je biografie...) */
 .intro-text h2 {
     font-weight: 380;
     font-size: 0.8rem;
@@ -221,30 +220,41 @@ nav {
     background-color: white;
     border: 1px solid rgb(239, 239, 239);
     max-width: 450px;
-    height: 200px;
+    height: 150px;
     border-radius: 5px;
     margin-top: 10px;
 }
 
 
-
-
+/*werkt vanaf hier niet*/
 
 /* Tekst in het vakje van uploaden van 5 schilderijen */
-.upload5-vaktekst h3 {
-    color: rgb(0, 0, 0);
-    font-weight: 400;
-    margin-left: 100px;
-    margin-top: 80px;
-    font-size: 15px;
+.upload5-vaktekst h3{
+    color: #dbdbdb;
+    font-weight: 380;
+    font-size: 0.8rem;
+    /*padding-top: 50px;*/
 }
 
-
+.upload5-vaktekst h3{
+    display: flex;
+    align-items: right;
+    justify-content: right;
+}
+    
 /* pictogram afbeelding in het vakje van het uploaden van de afbeeldingen */
 .afbeelding-picto img{
-    width: 15%;
-    height: 15%;
+    width: 20%;
+    height: auto;
     padding-left: 15px;
-    margin-left: 4px;
 }
+
+.afbeelding-picto img{
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+}
+
+
+
 
