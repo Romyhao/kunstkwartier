@@ -158,6 +158,14 @@ nav {
     object-fit: cover;
 }
 
+.werk-img3, .werk-img4 {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-left: 180px;
+}
+
 .werk-info1, .werk-info2, .werk-info3, .werk-info4 {
     flex: 1;
     display: flex;
